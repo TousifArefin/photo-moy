@@ -1,0 +1,598 @@
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  /* overflow-y: hidden; // hide vertical */
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.4;
+}
+
+.cbody {
+  border: 10px solid #ff871b;
+}
+.booknow {
+  background-color: #ff871b;
+  color: #f7f7f7;
+}
+
+.pmimg {
+  top: 10px;
+  margin-top: -20%;
+}
+.left {
+  float: left;
+}
+
+.carousel-item img {
+  height: 550px;
+}
+
+.primary-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.menu img {
+  height: 120px;
+  width: 120px;
+}
+
+.icon {
+  width: 100px;
+}
+
+/* .color {
+	color: #002C3E;
+} */
+
+.img1 {
+  position: relative;
+  left: 25px;
+  bottom: 80px;
+  border-radius: 0% 30%;
+  border: 13px solid white;
+}
+.text {
+  bottom: 80px;
+}
+.img2 {
+  position: relative;
+  top: 3px;
+  right: 50px;
+  border-radius: 0% 0% 30% 0%;
+  border: 13px solid white;
+}
+.marketheading {
+  position: relative;
+  left: 50%;
+  top: 40%;
+}
+.textbtn {
+  color: #000;
+  background-color: #ffffff;
+  border-color: #000;
+  -webkit-text-stroke-width: medium;
+}
+
+/*** Footer ***/
+/* .footer {
+	background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url(../img/footer.jpg) center center no-repeat;
+	background-size: cover;
+} */
+.footer {
+  text-align: center;
+  background: #880202;
+
+  font-style: bold;
+  background-size: cover;
+}
+.text-start {
+  left: 100px;
+}
+.card {
+  padding: 0;
+}
+.card-wrapper {
+}
+.copyright {
+  text-decoration: none;
+  color: white;
+}
+
+.fcolor {
+  background-color: #ff871b;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+/* custom design */
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: "Dancing Script";
+  width: 85%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #808080;
+  padding: 0px 0;
+  background: transparent;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: gray;
+}
+
+/* mega menu  */
+.navbar .megamenu {
+  padding: 1rem;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+.menu-vertical-line {
+  width: 1px;
+  background-color: #e8edf5;
+}
+.navbtn {
+  background-color: white;
+  /* color: black; */
+  border: 1px solid #8a8888;
+  width: 120%;
+  height: 53%;
+
+  margin-left: -70%;
+}
+@media (max-width: 995px) {
+  .navbtn {
+    width: 15%;
+    height: 73%;
+    margin-left: -1%;
+  }
+}
+
+.img-container {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+.gimg {
+  max-width: fit-content;
+}
+
+@media (max-width: 900px) {
+  .myme {
+    margin-left: 15%;
+  }
+}
+@media (min-width: 950px) {
+  .textabout {
+    margin-top: 45px;
+  }
+}
+.icons i {
+  font-size: 150%;
+}
+
+/* Counter */
+.counter_number {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: roboto;
+  color: #bdbdbd;
+}
+.counter_title {
+  font-family: roboto;
+  font-weight: 600;
+  color: #c9c9c9;
+  letter-spacing: 0.25px;
+}
+.counter_cell {
+  margin-bottom: 66px;
+}
+/* Counter end */
+
+#main_nav {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+.main_body {
+  margin-top: 103px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav_icon {
+  float: left;
+}
+.nav_index {
+  /* border-bottom: 0.25px solid #D9D9F9; */
+  background-color: #f7f7f7;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.menu_item {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #f7f7fd;
+  border-radius: 3px;
+
+  z-index: 1;
+  overflow-y: scroll;
+
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.menu_section_margine {
+  border-right: 5px solid #d9d9f9;
+}
+
+.dummy_text {
+  padding-top: 100px;
+}
+
+.menu_subtitle {
+  color: cadetblue;
+  font-weight: 700;
+}
+.pdl_28 {
+  padding-left: 28px;
+}
+/* contact image  */
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  right: 80px;
+  width: 100%;
+  height: 100%;
+}
+.image2 {
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  width: 77%;
+  height: 46%;
+  border-radius: 150px 148px 0px 0px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+  color: #ffffff;
+  line-height: 10px;
+}
+.top-left {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* why photo moy section start */
+.index_number_l {
+  float: right;
+  font-weight: 800;
+  color: #c1c1c1;
+  font-family: alfa slab system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 55px;
+  line-height: 33px;
+  margin-left: 19px;
+}
+.index_title {
+  font-weight: bold;
+  color: #f6851f;
+  font-size: 16px;
+}
+.section_text_l {
+  text-align: right;
+}
+
+.index_number_r {
+  float: left;
+  font-weight: 800;
+  color: #c1c1c1;
+  font-family: alfa slab system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 55px;
+  line-height: 33px;
+  margin-right: 19px;
+}
+.section_text_r {
+  text-align: left;
+}
+/* why photo moy section end */
+
+/* all media querys */
+@media screen and (max-width: 1992px) {
+  .Why_photo_moy {
+    display: block !important;
+  }
+  .Why_photo_moy_hidden {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Why_photo_moy_hidden {
+    display: block !important;
+  }
+  .Why_photo_moy {
+    display: none !important;
+  }
+  .section_text_r {
+    text-align: center !important;
+  }
+  .index_number_r {
+    float: left;
+    font-weight: 800;
+    color: #c1c1c1;
+    font-family: alfa slab system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 55px;
+    line-height: 33px;
+    margin-right: 19px;
+  }
+
+  /* new_create_account   */
+  .new_create_account {
+    position: absolute !important;
+    left: 25% !important;
+    top: 20px !important;
+    height: 51% !important;
+    width: 50% !important;
+    background-color: #f7f7f7;
+  }
+}
+@media screen and (max-width: 940px) {
+  .location_class {
+    position: absolute !important;
+    left: 21% !important;
+    bottom: 35% !important;
+    height: 420px !important;
+    width: 240px !important;
+    background-color: #f6851f;
+  }
+  .booking_class {
+    position: absolute !important;
+    left: 17% !important;
+    bottom: 38% !important;
+    height: 434px !important;
+    width: 276px !important;
+    background-color: #f6851f;
+  }
+
+  .packages {
+    position: absolute !important;
+    left: 22% !important;
+    bottom: 36% !important;
+    height: 465px !important;
+    width: 255px !important;
+    background-color: #f6851f;
+  }
+  .new_create_account {
+    position: absolute;
+    left: 25% !important;
+    top: 10px !important;
+    height: 80% !important;
+    width: 50% !important;
+    background-color: #f7f7f7;
+  }
+}
+/* all media querys end */
+
+/* map section */
+.createmain {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.formclass {
+  position: absolute;
+  right: 80px;
+  left: 25%;
+  top: 10%;
+  height: 10%;
+  width: 50%;
+}
+
+.formcolor {
+  color: #bdbdbd;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.packages {
+  position: absolute;
+  left: 57%;
+  /* bottom: 40%; */
+  height: 515px;
+  width: 321px;
+  background-color: #f6851f;
+}
+.booking_class {
+  position: absolute;
+  left: 57%;
+  /* bottom: 40%; */
+  height: 439px;
+  width: 321px;
+  background-color: #f6851f;
+}
+.location_class {
+  position: absolute;
+  left: 57%;
+  /* bottom: 40%; */
+  height: 439px;
+  width: 321px;
+  background-color: #f6851f;
+}
+.new_create_account {
+  position: absolute;
+  left: 25%;
+  top: 20px;
+  height: 75%;
+  width: 50%;
+  background-color: #f7f7f7;
+}
+.cabtn {
+  margin-left: 30%;
+  width: 35%;
+  color: #ffffff;
+  background-color: #ea7d1a;
+  border-color: #f7f7f7;
+}
+.create-logo {
+  width: 75px;
+  height: 40%;
+  margin-top: 10%;
+}
+.inputdiv {
+  margin-left: 20%;
+}
+.inputfild {
+  width: 80%;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-color: #ced4da;
+  color: #ced4da;
+}
+/* input icon */
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  /* width: 100%; */
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 5px;
+  min-width: 48px;
+  margin-left: 79%;
+  color: #c5c5c5;
+  margin-top: 2px;
+}
+
+.date_icon {
+  padding: 6px;
+  min-width: 40px;
+  margin-left: 30%;
+  color: #c5c5c5;
+}
+.dropdown {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+/* packages section css */
+
+.packages-item {
+  position: relative;
+  overflow: hidden;
+}
+.packages-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7fd;
+  bottom: -100%;
+  transition: 0.5s;
+}
+.packages-item:hover .packages-overlay {
+  bottom: 0;
+}
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474d;
+  margin-right: 20px;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: #f6851f;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all 0.5s;
+}
+
+.cart-btn:hover {
+  background-color: #f6851f;
+  color: #000000;
+}
