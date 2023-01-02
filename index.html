@@ -26,6 +26,9 @@ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swa
 rel="stylesheet"
 />
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- coustom files  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
     ">
@@ -40,41 +43,44 @@ rel="stylesheet"
     <section id="main_nav">
       <nav class="navbar nav navbar-dark d-flex nav_index">
        <a href="index.html">
-         <img class="p-2" src="images/top-logo.png">
+         <img class="p-2 " src="images/top-logo.png">
        </a>
-        <button class="p-2 navbar-toggler nav_icon" style="
-        margin-right: 75%;
-    " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="p-2 menu_icon navbar-toggler nav_icon"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""><img src="images/Menu icon.png"></span>
         </button>
-        <div class="d-grid gap-2 ml-auto p-2">
-          <button type="button" class="btn btn" style="border-color: #F6851F; color: #F6851F;">Login</button>
+        <div class=" loginbtn_hide_show d-grid gap-2 ml-auto p-2">
+          <button type="button" class="btn btn" style="border-color: #f6851f;
+  color: #f6851f;
+  margin-right: 25px;">Login</button>
           
         </div>
       </nav>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="container menu_item">
+           <div class=" loginbtn_hide d-grid gap-2 ml-auto p-2">
+              <button type="button" class="btn btn loginbtn">Login</button>
+           </div>
           <div class="row">
-            <div class="col pdl_28 menu_section_margine">
+            <div class="col-md-4 col-sm-4 pdl_28 menu_section_margine">
               <h3 class="menu_title">PhotoMoy Shoot</h3>
               <p class="menu_subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum maxime minima. Beatae alias hic aspernatur deleniti corrupti delectus minus voluptatum? Cum facere illum provident nihil commodi blanditiis quo culpa.</p>
-              <a name="package_book-btn" id="package_book" class="btn btn-outline-warning" href="#" role="button">Book Now</a>
+              <p class="menu_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum maxime minima. Beatae alias hic aspernatur deleniti corrupti delectus minus voluptatum? Cum facere illum provident nihil commodi blanditiis quo culpa.</p>
+              <a name="package_book-btn" id="package_book" class="btn  cardbutton" href="#">Book Now</a>
             </div>
-            <div class="col pdl_28 menu_section_margine">
+            <div class="col-md-4 col-sm-4 pdl_28 menu_section_margine">
               <h3 class="menu_title">PhotoMoy Shoot</h3>
               <p class="menu_subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum maxime minima. Beatae alias hic aspernatur deleniti corrupti delectus minus voluptatum? Cum facere illum provident nihil commodi blanditiis quo culpa.</p>
-              <a name="package_book-btn" id="package_book" class="btn btn-outline-warning" href="#" role="button">Book Now</a>
+              <p class="menu_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum maxime minima. Beatae alias hic aspernatur deleniti corrupti delectus minus voluptatum? Cum facere illum provident nihil commodi blanditiis quo culpa.</p>
+              <a name="package_book-btn" id="package_book" class="btn cardbutton" href="#" >Book Now</a>
             </div>
-            <div class="col pdl_28 menu_section_margine">
+            <div class="col-md-4 col-sm-4  pdl_28 menu_section_margine">
               <h3 class="menu_title">PhotoMoy Shoot</h3>
               <p class="menu_subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum maxime minima. Beatae alias hic aspernatur deleniti corrupti delectus minus voluptatum? Cum facere illum provident nihil commodi blanditiis quo culpa.</p>
-              <a name="package_book-btn" id="package_book" class="btn btn-outline-warning" href="#" role="button">Book Now</a>
+              <p class="menu_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum maxime minima. Beatae alias hic aspernatur deleniti corrupti delectus minus voluptatum? Cum facere illum provident nihil commodi blanditiis quo culpa.</p>
+              <a name="package_book-btn" id="package_book" class="btn  cardbutton" href="#">Book Now</a>
             </div>
 
-            <div class="col pdl_28">
+            <!-- <div class="col-md-3 col-sm-4 pdl_28">
               <ul class="list-unstyled">
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 1</a></li>
@@ -82,7 +88,7 @@ rel="stylesheet"
                 <li><a href="#">Item 1</a></li>
                 
               </ul>
-            </div>
+            </div> -->
         </div>
 
         </div>
@@ -91,9 +97,8 @@ rel="stylesheet"
 
     </section>
 <!-- nav section end  -->
-     
-<div class="container-fluid position-absolute main_body"><!-- main_body container start  -->
-    <!-- slider begin -->
+  <div class="contaienr_fluid overflow-hidden">
+     <!-- slider begin -->
     <section class="carosel-section">
       
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -121,18 +126,18 @@ rel="stylesheet"
     </div>
       
     </section>
-    <!-- slider end -->
-
+    <!-- slider end -->  
+  </div> 
+<div class="container-fluid position-absolute main_body"><!-- main_body container start  -->
+   
       <!-- why photo moy section Start -->
       <section class="work-section" id="work-section">
         <div class="container overflow-hidden">
-         
-            
               <div class="row">
                 <div class="col-lg-12">
                   <h2 class="text-center">why photo Moy Works</h2>
                   <a href="#">
-                    <img src="images/work.jpeg " class="img-fluid" alt="">
+                    <img src="images/work-removebg.png" class="img-fluid mt-5" alt="">
                   </a>
                 </div>
               </div>
@@ -143,8 +148,8 @@ rel="stylesheet"
       <!-- why photo moy section End -->
 
           <!-- about section start  -->
-          <section class="about-section mt-2 " id="section-about">
-            <div class="container-fluid  overflow-hidden  px-lg-0">
+          <section class="about-section  " id="section-about">
+            <div class="container-fluid mt-5 overflow-hidden  px-lg-0">
               <div class="container-xxl py-5">
                 <div class="container">
                     <div class="row">
@@ -177,44 +182,32 @@ rel="stylesheet"
 
               <!-- logo and counter section start -->
                     <section id="counter">
-                      <div class="container">
+                      <div class="container mt-5">
                         <div class="row">
-                          <div class="col-lg-6 col-md-12">
+                          <div class="col-lg-6">
                             <img src="images/hezagonal log.png" class=" rounded-top" alt="PhotoMoy">
                           </div>
-                          <div class="col-lg-6 col-md-12 d-flex align-content-center flex-wrap">
+                          <div class="col-lg-6">
                             <div class="row">
-                              <div class="col-lg-6 col-md-6 col-sm-12 counter_cell">
-                                <!-- <p class="counter_number">1500<span>+</span></p>
-                                <p class="counter_title">Family event covered</p> -->
-                                <P><span class="counter_number">1500+</span><br>
-                                  <span class="counter_title">Family event cover</span>
-                                </P>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 counter_cell">
-                                <!-- <p class="counter_number">1500<span>+</span></p>
-                                <p class="counter_title">Family event covered</p> -->
-                                <P><span class="counter_number">1500+</span><br>
-                                  <span class="counter_title">Family event cover</span>
-                                </P>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 ">
-                                <!-- <p class="counter_number">1500<span>+</span></p>
-                                <p class="counter_title">Family event covered</p> -->
-                                <P><span class="counter_number">1500+</span><br>
-                                  <span class="counter_title">Family event cover</span>
-                                </P>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 ">
-                                <!-- <p class="counter_number">1500<span>+</span></p>
-                                <p class="counter_title">Family event covered</p> -->
-                                <P><span class="counter_number">1500+</span><br>
-                                  <span class="counter_title">Family event cover</span>
-                                </P>
-                              </div>
-                              
-                              
-
+                                <div class="flex">
+                                   <div class="col-lg-4">
+                                      <h1 id="num1" class="fw-bolder">250+</h1>
+                                      <p class="text-uppercase fs-6 fw-bold">Family Event Covered</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <h1 id="num2" class="fw-bolder">435+</h1>
+                                      <p class="text-uppercase fs-6 fw-bold">Product photography shoot</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <h1 id="num3" class="fw-bolder">220+</h1>
+                                      <p class="text-uppercase fs-6 fw-bold">Corporate event Covered</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <h1 id="num4" class="fw-bolder">220+</h1>
+                                      <p class="text-uppercase fs-6 fw-bold">Prosonal Photography</p>
+                                    </div>
+                                                
+                                </div>             
                             </div>
                             
 
@@ -356,15 +349,15 @@ rel="stylesheet"
 
                           <!-- Contact Start -->
                           <section class="team-members" id="section-contact">
-                          <div class="container-fluid  overflow-hidden px-lg-0" style="margin: 6rem 0;">
+                          <div class="container-fluid mt-5 overflow-hidden px-lg-0" style="margin: 6rem 0;">
                             <div class="container contact px-lg-0">
                               <div class="row ">
                                 <div class="col-lg-4 ">
                                   <div class="parent">
                                     <img class="image1" src="images/SDSFHGH.png" />
-                                    <img class="image2" src="images/woman.jpeg" />
+                                    <img class="image2" src="images/woman-removebg-preview.png" />
                                     <div class="top-left">
-                                      <p class="text-nowrap">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quami</p>
+                                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere aut ea sapiente dignissimos vero, voluptas velit excepturi! Sequi, natus impedit voluptate doloremque enim culpa dignissimos labore necessitatibus, possimus, sunt ipsam?</p>
                                     </div>
                                     <div class="bottom-left">
                                       <h5>Monalis</h5>
@@ -372,7 +365,7 @@ rel="stylesheet"
                                       </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-8 contact-text" style="	background-image: url('/images/bgimg.jpg');
+                                <div class="col-lg-8 contact-text" style="	background-image: url('/images/bgimg-removebg-preview.png');
                                 background-repeat: repeat-y;
                                 background-position: right;
                                 background-repeat: no-repeat;
@@ -414,16 +407,16 @@ rel="stylesheet"
 
                             <!-- app section start -->
                             <section class="app-section">
-                              <div class="container-fluid">
+                              <div class="container-fluid mt-5">
                                 <div class="container ">
                                   <div class="row">
                                     <div class="col-lg-6 align-content-center">
-                                      <img src="images/mobile.jpeg" class="img-fluid" style="margin-left: 25%;" alt="">
+                                      <img src="images/mobile.jpeg" class="img-fluid appimg" alt="">
                                     </div>
                                     <div class="col-lg-6 myme align-content-center" style="margin-top: 5%;">
-                                      <h1 style="font-family: 'Dancing Script', cursive;">Make Your Memory 
+                                      <h1 class="apptext1" style="font-family: 'Dancing Script', cursive;">Make Your Memory 
                                         Everlasting</h1>
-                                      <p>Download and book your event with just few clicks</p>
+                                      <p class="apptext">Download and book your event with just few clicks</p>
                                       <div class="clearfix">
                                         <div class="img-container">
                                         <img src="images/gooogle.jpeg" alt="google" class="img-fluid gimg" style="width:100%">
@@ -451,7 +444,7 @@ rel="stylesheet"
                                           </div>
                                           <div class="row">
                                             <div class="col-lg-4">
-                                              <img src="images/photom.jpeg" class="img-fluid mb-2" style="margin-left: 10%;" alt="">
+                                              <img src="images/photom.jpeg" class="img-fluid mb-2" style="margin-left: 14%; margin-top: 40px;" alt="">
                                             </div>
                                             <div class="col-lg-8 mt-5">
                                               <div class="container mt-5">
@@ -668,12 +661,43 @@ rel="stylesheet"
        }
    }
 })
+  
 </script>
+<!-- counter js -->
+<script src="/path/to/cdn/jquery.slim.min.js"></script>
+<script src="js/countMe.min.js"></script>
+ <script>
+      window.onload = () => {
+       $("#num1").countMe(40, 65);
+        $("#num2").countMe(30, 30);
+        $("#num3").countMe(40, 50);
+        $("#num4").countMe(100, 200);
+      };
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
   </body>
 </html>

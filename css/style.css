@@ -40,7 +40,8 @@ h6,
 }
 
 .carousel-item img {
-  height: 550px;
+  height: 100%;
+  margin-top: 104px;
 }
 
 .primary-title {
@@ -89,7 +90,6 @@ h6,
   color: #000;
   background-color: #ffffff;
   border-color: #000;
-  -webkit-text-stroke-width: medium;
 }
 
 /*** Footer ***/
@@ -186,7 +186,7 @@ h6,
   background-color: #e8edf5;
 }
 .navbtn {
-  background-color: white;
+  background-color: #ffffff;
   /* color: black; */
   border: 1px solid #8a8888;
   width: 120%;
@@ -267,17 +267,22 @@ h6,
   background-color: rgb(255, 255, 255);
   border: 3px solid #f7f7fd;
   border-radius: 3px;
-
   z-index: 1;
-  overflow-y: scroll;
-
   padding: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 300px;
+  overflow: auto;
 }
-
+.menulogo {
+}
+.loginbtn {
+  border-color: #f6851f;
+  color: #f6851f;
+  margin-right: 500px;
+}
 .menu_section_margine {
-  border-right: 5px solid #d9d9f9;
+  border-right: 5px solid #fab87e;
 }
 
 .dummy_text {
@@ -285,9 +290,10 @@ h6,
 }
 
 .menu_subtitle {
-  color: cadetblue;
+  color: #fcb272;
   font-weight: 700;
 }
+
 .pdl_28 {
   padding-left: 28px;
 }
@@ -309,23 +315,26 @@ h6,
   left: 0px;
   width: 77%;
   height: 46%;
-  border-radius: 150px 148px 0px 0px;
 }
 .bottom-left {
   position: absolute;
-  bottom: 20px;
-  left: 22px;
+  bottom: 30px;
+  left: 15px;
   color: #ffffff;
   line-height: 10px;
 }
 .top-left {
   position: absolute;
-  bottom: 80px;
-  left: 20px;
+  bottom: 121px;
+  left: 15px;
   text-align: left;
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 256px;
 }
-
+/* contact image end */
 /* why photo moy section start */
 .index_number_l {
   float: right;
@@ -362,85 +371,9 @@ h6,
   text-align: left;
 }
 /* why photo moy section end */
-
-/* all media querys */
-@media screen and (max-width: 1992px) {
-  .Why_photo_moy {
-    display: block !important;
-  }
-  .Why_photo_moy_hidden {
-    display: none !important;
-  }
+.appimg {
+  margin-left: 10%;
 }
-@media screen and (max-width: 768px) {
-  .Why_photo_moy_hidden {
-    display: block !important;
-  }
-  .Why_photo_moy {
-    display: none !important;
-  }
-  .section_text_r {
-    text-align: center !important;
-  }
-  .index_number_r {
-    float: left;
-    font-weight: 800;
-    color: #c1c1c1;
-    font-family: alfa slab system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-      "Helvetica Neue", sans-serif;
-    font-size: 55px;
-    line-height: 33px;
-    margin-right: 19px;
-  }
-
-  /* new_create_account   */
-  .new_create_account {
-    position: absolute !important;
-    left: 25% !important;
-    top: 20px !important;
-    height: 51% !important;
-    width: 50% !important;
-    background-color: #f7f7f7;
-  }
-}
-@media screen and (max-width: 940px) {
-  .location_class {
-    position: absolute !important;
-    left: 21% !important;
-    bottom: 35% !important;
-    height: 420px !important;
-    width: 240px !important;
-    background-color: #f6851f;
-  }
-  .booking_class {
-    position: absolute !important;
-    left: 17% !important;
-    bottom: 38% !important;
-    height: 434px !important;
-    width: 276px !important;
-    background-color: #f6851f;
-  }
-
-  .packages {
-    position: absolute !important;
-    left: 22% !important;
-    bottom: 36% !important;
-    height: 465px !important;
-    width: 255px !important;
-    background-color: #f6851f;
-  }
-  .new_create_account {
-    position: absolute;
-    left: 25% !important;
-    top: 10px !important;
-    height: 80% !important;
-    width: 50% !important;
-    background-color: #f7f7f7;
-  }
-}
-/* all media querys end */
-
 /* map section */
 .createmain {
   position: relative;
@@ -462,10 +395,12 @@ h6,
   font-weight: bolder;
 }
 
+/* location page,packages page,create account section css */
+
 .packages {
   position: absolute;
   left: 57%;
-  /* bottom: 40%; */
+  top: 5%;
   height: 515px;
   width: 321px;
   background-color: #f6851f;
@@ -488,10 +423,10 @@ h6,
 }
 .new_create_account {
   position: absolute;
-  left: 25%;
+  left: 30%;
   top: 20px;
-  height: 75%;
-  width: 50%;
+  height: 450px !important;
+  width: 550px !important;
   background-color: #f7f7f7;
 }
 .cabtn {
@@ -500,6 +435,12 @@ h6,
   color: #ffffff;
   background-color: #ea7d1a;
   border-color: #f7f7f7;
+}
+.licolor {
+  color: #8a8888;
+}
+.scolor {
+  color: #cc650a;
 }
 .create-logo {
   width: 75px;
@@ -567,6 +508,11 @@ h6,
 .packages-item:hover .packages-overlay {
   bottom: 0;
 }
+.cardbutton {
+  background-color: #f6851f;
+  color: #ffffff;
+  border: none;
+}
 
 /* Product Price */
 .product-price {
@@ -596,3 +542,379 @@ h6,
   background-color: #f6851f;
   color: #000000;
 }
+
+/* counter css */
+.counter {
+  font-family: "Inter";
+}
+.flex {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex div {
+  width: 150px;
+  height: 150px;
+  padding: 50px 0;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+
+  color: #c4c4c4;
+}
+/* counter css end*/
+
+/* all media querys */
+
+@media (max-width: 1824px) {
+  .Why_photo_moy_hidden {
+    display: none !important;
+  }
+  .Why_photo_moy {
+    display: block !important;
+  }
+  .loginbtn_hide {
+    display: none !important;
+  }
+  .loginbtn_hide_show {
+    display: block !important;
+  }
+  .menu_icon {
+    margin-right: 75%;
+  }
+}
+
+@media (max-width: 1224px) {
+  .Why_photo_moy {
+    display: block !important;
+  }
+  .Why_photo_moy_hidden {
+    display: none !important;
+  }
+  .loginbtn_hide {
+    display: none !important;
+  }
+  .loginbtn_hide_show {
+    display: block !important;
+  }
+  .new_create_account {
+    position: absolute;
+    left: 25%;
+    top: 10px;
+    height: 50% !important;
+    width: 50% !important;
+    background-color: #f7f7f7;
+  }
+  .packages {
+    position: absolute !important;
+    left: 22% !important;
+    bottom: 18% !important;
+    height: 465px !important;
+    width: 255px !important;
+    background-color: #f6851f;
+  }
+  .menu_icon {
+    margin-right: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Why_photo_moy_hidden {
+    display: block !important;
+  }
+  .Why_photo_moy {
+    display: none !important;
+  }
+  .loginbtn_hide {
+    display: none !important;
+  }
+  .loginbtn_hide_show {
+    display: block !important;
+  }
+  .location_class {
+    position: absolute !important;
+    left: 35% !important;
+    bottom: 10% !important;
+    height: 420px !important;
+    width: 240px !important;
+    background-color: #f6851f;
+  }
+  .booking_class {
+    position: absolute !important;
+    left: 17% !important;
+    bottom: 38% !important;
+    height: 434px !important;
+    width: 276px !important;
+    background-color: #f6851f;
+  }
+
+  .packages {
+    position: absolute !important;
+    left: 22% !important;
+    bottom: 18% !important;
+    height: 465px !important;
+    width: 255px !important;
+    background-color: #f6851f;
+  }
+  .new_create_account {
+    position: absolute !important;
+    left: 25% !important;
+    top: 100px !important;
+    height: 47% !important;
+    width: 50% !important;
+    background-color: #f7f7f7;
+  }
+  .menu_icon {
+    margin-right: 65% !important;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .Why_photo_moy_hidden {
+    display: block !important;
+  }
+  .Why_photo_moy {
+    display: none !important;
+  }
+  .location_class {
+    position: absolute !important;
+    left: 35% !important;
+    bottom: 10% !important;
+    height: 420px !important;
+    width: 240px !important;
+    background-color: #f6851f;
+  }
+  .booking_class {
+    position: absolute !important;
+    left: 17% !important;
+    bottom: 33% !important;
+    height: 434px !important;
+    width: 276px !important;
+    background-color: #f6851f;
+  }
+  .new_create_account {
+    position: absolute !important;
+    left: 25% !important;
+    top: 55px !important;
+    height: 47% !important;
+    width: 50% !important;
+    background-color: #f7f7f7;
+  }
+  .cabtn {
+    margin-left: 30% !important;
+    width: 37% !important;
+    color: #ffffff;
+    background-color: #ea7d1a;
+    border-color: #f7f7f7;
+  }
+  .loginbtn_hide {
+    display: block !important;
+  }
+  .loginbtn_hide_show {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .menu_icon {
+    margin-right: 53% !important;
+    margin-bottom: 20px !important;
+  } */
+  .apptext {
+    margin-left: -18% !important;
+  }
+  .apptext1 {
+    margin-left: -13% !important;
+  }
+  .appimg {
+    margin-left: 12% !important;
+  }
+  .Why_photo_moy_hidden {
+    display: block !important;
+  }
+  .Why_photo_moy {
+    display: none !important;
+  }
+  .loginbtn_hide {
+    display: block !important;
+  }
+  .loginbtn_hide_show {
+    display: none !important;
+  }
+
+  .section_text_r {
+    text-align: center !important;
+  }
+  .index_number_r {
+    float: left;
+    font-weight: 800;
+    color: #c1c1c1;
+    font-family: alfa slab system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 55px;
+    line-height: 33px;
+    margin-right: 19px;
+  }
+
+  .location_class {
+    position: absolute !important;
+    left: 15% !important;
+    bottom: 35% !important;
+    height: 420px !important;
+    width: 240px !important;
+    background-color: #f6851f;
+  }
+  .booking_class {
+    position: absolute !important;
+    left: 18% !important;
+    bottom: 32% !important;
+    height: 434px !important;
+    width: 276px !important;
+    background-color: #f6851f;
+  }
+  .packages {
+    position: absolute !important;
+    left: 19% !important;
+    top: 12% !important;
+    height: 465px !important;
+    width: 255px !important;
+    background-color: #f6851f;
+  }
+  .new_create_account {
+    position: absolute !important;
+    left: 14% !important;
+    top: 42px !important;
+    height: 47% !important;
+    width: 70% !important;
+    background-color: #f7f7f7;
+  }
+  .cabtn {
+    margin-left: 25% !important;
+    width: 51% !important;
+    color: #ffffff !important;
+    background-color: #ea7d1a !important;
+    border-color: #f7f7f7 !important;
+  }
+  /* contact image  */
+  .image1 {
+    position: relative;
+    right: 11px !important;
+    width: 100%;
+    height: 100%;
+  }
+  .image2 {
+    position: absolute;
+    top: 62px !important;
+    left: 100px !important;
+    width: 78% !important;
+    height: 46% !important;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 50px !important;
+    left: 115px !important;
+    color: #ffffff;
+    line-height: 10px;
+  }
+  .top-left {
+    position: absolute;
+    bottom: 185px !important;
+    left: 115px !important;
+    text-align: left;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 365px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu_description {
+    display: none !important;
+  }
+  .new_create_account {
+    position: absolute !important;
+    left: 10% !important;
+    top: 95px !important;
+    height: 44% !important;
+    width: 80% !important;
+    background-color: #f7f7f7;
+  }
+  .cabtn {
+    margin-left: 22% !important;
+    width: 60% !important;
+    color: #ffffff;
+    background-color: #ea7d1a;
+    border-color: #f7f7f7;
+  }
+  .image1 {
+    position: relative;
+    right: 17px !important;
+    width: 100% !important;
+    height: 100%;
+  }
+  .image2 {
+    position: absolute;
+    top: 30px !important;
+    left: 35px !important;
+    width: 78% !important;
+    height: 46% !important;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 15px !important;
+    left: 40px !important;
+    color: #ffffff;
+    line-height: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 179px;
+  }
+  .top-left {
+    position: absolute;
+    bottom: 80px !important;
+    left: 40px !important;
+    text-align: left;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 179px;
+  }
+  .location_class {
+    position: absolute !important;
+    left: 10% !important;
+    bottom: 40% !important;
+    height: 420px !important;
+    width: 240px !important;
+    background-color: #f6851f;
+  }
+  .booking_class {
+    position: absolute !important;
+    left: 17% !important;
+    bottom: 33% !important;
+    height: 434px !important;
+    width: 276px !important;
+    background-color: #f6851f;
+  }
+  .packages {
+    position: absolute !important;
+    left: 20% !important;
+    bottom: 38% !important;
+    height: 465px !important;
+    width: 255px !important;
+    background-color: #f6851f;
+  }
+  .menu_icon {
+    margin-right: 27% !important;
+    margin-bottom: 20px !important;
+  }
+}
+/* all media querys end */
