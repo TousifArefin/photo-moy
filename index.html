@@ -44,7 +44,7 @@ rel="stylesheet"
     <section id="main_nav">
       <nav class="navbar nav navbar-dark d-flex nav_index">
         <a href="index.html">
-          <img class="p-2" src="images/top-logo.png" />
+          <img class="img-fluid" src="images/LOGO 6.png" />
         </a>
         <button
           class="p-2 menu_icon navbar-toggler nav_icon"
@@ -57,7 +57,7 @@ rel="stylesheet"
         >
           <span class=""><img src="images/Menu icon.png" /></span>
         </button>
-        <div class="loginbtn_hide_show d-grid gap-2 ml-auto p-2">
+        <div class="loginbtn_hide_show d-grid  ml-auto p-2">
           <button
             type="button"
             class="btn btn"
@@ -69,7 +69,7 @@ rel="stylesheet"
       </nav>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="container menu_item">
-          <div class="loginbtn_hide d-grid gap-2 ml-auto p-2">
+          <div class="loginbtn_hide d-grid  ml-auto p-2">
             <button type="button" class="btn btn loginbtn">Login</button>
           </div>
           <div class="row">
@@ -242,21 +242,21 @@ rel="stylesheet"
                           </div>
                           <div class="col-lg-6">
                             <div class="row">
-                                <div class="flex">
-                                   <div class="col-lg-4">
-                                      <h1 id="num1" class="fw-bolder">100</h1>
+                                <div class="flex" id="counter">
+                                   <div class="col-lg-4 mx-5 numbers-box">
+                                      <h1  class="counter-value fw-bolder" data-count="10">0</h1>
                                       <p class="text-uppercase fs-6 fw-bold">Family Event Covered</p>
                                     </div>
-                                    <div class="col-lg-4">
-                                      <h1 id="num2" class="fw-bolder">100</h1>
+                                    <div class="col-lg-4 mx-2 numbers-box">
+                                      <h1 class="counter-value fw-bolder" data-count="20">0</h1>
                                       <p class="text-uppercase fs-6 fw-bold">Product photography shoot</p>
                                     </div>
-                                    <div class="col-lg-4">
-                                      <h1 id="num3" class="fw-bolder">100</h1>
+                                    <div class="col-lg-4 mx-5 numbers-box">
+                                      <h1 class="counter-value fw-bolder" data-count="30">0</h1>
                                       <p class="text-uppercase fs-6 fw-bold">Corporate event Covered</p>
                                     </div>
-                                    <div class="col-lg-4">
-                                      <h1 id="num4" class="fw-bolder">100</h1>
+                                    <div class="col-lg-4 mx-2 numbers-box">
+                                      <h1 class="counter-value fw-bolder" data-count="40">0</h1>
                                       <p class="text-uppercase fs-6 fw-bold">Prosonal Photography</p>
                                     </div>
                                                 
@@ -503,7 +503,7 @@ rel="stylesheet"
                                               <div class="container mt-5">
                                                 <div class="tab-content" id="nav-tabContent">
                                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                                <div class="owl-carousel owl-theme mt-3">
+                                                <div class="insta_post owl-carousel owl-theme mt-3">
                                                   <div class="item hover">
                                                     <div class="card">
                                                       <div class="card-header">
@@ -694,10 +694,10 @@ rel="stylesheet"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script type="text/javascript">
- $('.owl-carousel').owlCarousel({
+ $('.insta_post').owlCarousel({
    loop:true,
    margin:50,
-   nav:true,
+   nav:false,
    dots:false,
    autoplay:true,
    autoplaytimeout: 1000,
@@ -716,35 +716,32 @@ rel="stylesheet"
 })
   
 </script>
+<script type="text/javascript">
+ $('.owl-carousel').owlCarousel({
+   loop:true,
+   margin:50,
+   nav:false,
+   dots:false,
+   autoplay:true,
+   autoplaytimeout: 1000,
+   responsiveClass:true,
+   responsive:{
+       0:{
+           items:1
+       },
+       600:{
+           items:4
+       },
+       1000:{
+           items:6
+       }
+   }
+})
+  
+</script>
 <!-- counter js -->
-<script src="/path/to/cdn/jquery.slim.min.js"></script>
-<script src="js/countMe.min.js"></script>
- <script>
-      window.onload = () => {
-       $("#num1").countMe(40, 60);
-        $("#num2").countMe(40, 60);
-        $("#num3").countMe(40, 60);
-        $("#num4").countMe(40, 60);
-      };
-    </script>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-36251023-1"]);
-      _gaq.push(["_setDomainName", "jqueryscript.net"]);
-      _gaq.push(["_trackPageview"]);
 
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+<script src="js/countMe.min.js"></script>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
