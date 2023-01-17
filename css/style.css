@@ -404,6 +404,7 @@ h6,
 }
 .inputdiv {
   margin-left: 20%;
+  
 }
 .inputfild {
   width: 80%;
@@ -571,6 +572,9 @@ h6,
 height: 422px;
 left: 68px;
 top: 119px;
+}
+.custom_packages {
+  
 }
 
 /* all media querys */
@@ -843,7 +847,7 @@ top: 119px;
 
 @media (max-width: 375px) {
   .menu_icon {
-    margin-right: 5% !important;
+    margin-right: 12% !important;
   }
   .loginbtn_hide {
     display: block !important;
