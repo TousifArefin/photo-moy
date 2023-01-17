@@ -79,7 +79,7 @@ h6,
 }
 .marketheading {
   position: relative;
-  left: 50%;
+  left: 54%;
   top: 40%;
 }
 .textbtn {
@@ -522,8 +522,58 @@ h6,
 }
 /* counter css end*/
 
-/* all media querys */
 
+
+/* added new css files 16-01-23 */
+/* about section hover css */
+.aboutimg {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+
+.aboutimg:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+/* brand section image hover css*/
+.brandimg {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.brandimg {
+  height: 100px;
+  float: left;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+.brandimg:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.headerimg{
+
+}
+
+.package_img{
+  width: 412px;
+height: 422px;
+left: 68px;
+top: 119px;
+}
+
+/* all media querys */
 @media (max-width: 1824px) {
   .Why_photo_moy_hidden {
     display: none !important;
@@ -538,7 +588,7 @@ h6,
     display: block !important;
   }
   .menu_icon {
-    margin-right: 80%;
+    margin-right: 75%;
   }
 }
 
@@ -793,7 +843,7 @@ h6,
 
 @media (max-width: 375px) {
   .menu_icon {
-    margin-right: 12% !important;
+    margin-right: 5% !important;
   }
   .loginbtn_hide {
     display: block !important;
