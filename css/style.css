@@ -574,7 +574,13 @@ left: 68px;
 top: 119px;
 }
 .custom_packages {
+  background-image: url("/images/pagebg.jpg");
+  background: cover;
   
+}
+.flogo{
+  height: 96px;
+  width: 96px;
 }
 
 /* all media querys */
