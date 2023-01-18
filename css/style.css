@@ -582,6 +582,12 @@ top: 119px;
   height: 96px;
   width: 96px;
 }
+.model-logo{
+   width: 96px;
+  height: 96px;
+  margin-top: 5%;
+  padding: 10px 10px;
+}
 
 /* all media querys */
 @media (max-width: 1824px) {
