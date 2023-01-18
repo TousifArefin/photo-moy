@@ -489,16 +489,20 @@ h6,
   display: inline-block;
   background-color: #f6851f;
   border-radius: 6px;
-  font-size: 16px;
-  color: #ffffff;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 22px;
+  color: #000000;
   text-decoration: none;
-  padding: 12px 30px;
-  transition: all 0.5s;
+ width: 147px;
+height: 37px
 }
 
 .cart-btn:hover {
   background-color: #f6851f;
-  color: #ffffff;
+  color: #000;
 }
 
 /* counter css */
