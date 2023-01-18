@@ -404,13 +404,20 @@ h6,
   margin-top: 10%;
 }
 .inputdiv {
-  margin-left: 20%;
+  margin-left: 15%;
   
 }
 .inputfild {
-  width: 80%;
-  height: 40px;
+  width: 359px;
+  height: 33px;
   background-color: #f3f3f3;
+  border-color: #ced4da;
+  color: #ced4da;
+}
+.textareafild {
+  width: 359px;
+  height: 77px;
+  background-color:#F3F3F3;
   border-color: #ced4da;
   color: #ced4da;
 }
@@ -602,6 +609,14 @@ top: 119px;
   background-color: #f6851f;
   color: #ffffff;
   border: none;
+}
+.corporet_booking {
+  position: absolute;
+  left: 30%;
+  top: 20px;
+  height: 500px !important;
+  width: 550px !important;
+  background-color: #f7f7f7;
 }
 /* all media querys */
 @media (max-width: 1824px) {
