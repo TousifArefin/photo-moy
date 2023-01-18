@@ -5,9 +5,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f7f7f7;
-  /* overflow-y: hidden; // hide vertical */
+
   overflow-x: hidden;
 }
+
 
 h1,
 h2,
@@ -205,7 +206,7 @@ h6,
   z-index: 2;
 }
 .main_body {
-  margin-top: 103px;
+  margin-top: 100px;
   width: 100%;
   height: 100%;
 }
@@ -496,7 +497,7 @@ h6,
 
 .cart-btn:hover {
   background-color: #f6851f;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* counter css */
@@ -588,7 +589,20 @@ top: 119px;
   margin-top: 5%;
   padding: 10px 10px;
 }
-
+.btn_color{
+  background-color: #F6851F; 
+  border: none;
+}
+.cabtn:hover{
+  background-color: #f6851f;
+  color: #ffffff;
+  border: none;
+}
+.cardbutton:hover{
+  background-color: #f6851f;
+  color: #ffffff;
+  border: none;
+}
 /* all media querys */
 @media (max-width: 1824px) {
   .Why_photo_moy_hidden {
