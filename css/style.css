@@ -649,6 +649,14 @@ height: 37px
   background-color: #f6851f;
   color: #000;
 }
+.confirmbooking_class {
+	position: absolute;
+	left: 58%;
+	bottom: -23%;
+	height: 555px;
+	width: 321px;
+	background-color: #f6851f;
+}
 
 /* all media querys */
 @media (max-width: 1824px) {
@@ -725,6 +733,7 @@ height: 37px
     width: 240px !important;
     background-color: #f6851f;
   }
+ 
   .booking_class {
     position: absolute !important;
     left: 17% !important;
@@ -760,6 +769,15 @@ height: 33px !important;
   border-color: #ced4da;
   color: #ced4da;
 } */
+/* 21-01-23 add new class and css */
+.confirmbooking_class {
+	position: absolute !important;
+	left: 9% !important;
+	bottom: 25% !important;
+	height: 545px !important;
+	width: 300px !important;
+	background-color: #f6851f;
+}
 }
 
 @media (min-width: 850px) and (max-width: 950px) {
@@ -951,6 +969,14 @@ height: 33px !important;
 	border-color: #ced4da;
 	color: #ced4da;
 }
+.confirmbooking_class {
+	position: absolute !important;
+	left: 9% !important;
+	bottom: 25% !important;
+	height: 545px !important;
+	width: 300px !important;
+	background-color: #f6851f;
+}
 
 }
 
@@ -1079,7 +1105,14 @@ height: 33px !important;
 	border-color: #ced4da;
 	color: #ced4da;
 }
-  
+ .confirmbooking_class {
+	position: absolute !important;
+	left: 9% !important;
+	bottom: 25% !important;
+	height: 545px !important;
+	width: 300px !important;
+	background-color: #f6851f;
+} 
 }
 
 @media (max-width: 320px) {
