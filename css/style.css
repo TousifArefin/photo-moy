@@ -466,11 +466,7 @@ h6,
 .packages-item:hover .packages-overlay {
   bottom: 0;
 }
-.cardbutton {
-  background-color: #f6851f;
-  color: #ffffff;
-  border: none;
-}
+
 
 /* Product Price */
 .product-price {
@@ -485,25 +481,7 @@ h6,
   margin-right: 20px;
 }
 
-.cart-btn {
-  display: inline-block;
-  background-color: #f6851f;
-  border-radius: 6px;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 22px;
-  color: #000000;
-  text-decoration: none;
- width: 147px;
-height: 37px
-}
 
-.cart-btn:hover {
-  background-color: #f6851f;
-  color: #000;
-}
 
 /* counter css */
 .counter {
@@ -639,6 +617,36 @@ top: 119px;
   background-color: #ffffff;
   border-color: #000;
 }
+.cardbutton {
+  width: 153px;
+height: 37px;
+background: #F6851F;
+border-radius: 5px;
+  
+}
+.cardbutton:hover{
+   background-color: #f6851f;
+  color: #000;
+}
+.cart-btn {
+  display: inline-block;
+  background-color: #f6851f;
+  border-radius: 6px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+ width: 147px;
+height: 37px
+}
+
+.cart-btn:hover {
+  background-color: #f6851f;
+  color: #000;
+}
 /* all media querys */
 @media (max-width: 1824px) {
   
@@ -662,6 +670,14 @@ top: 119px;
     display: block !important;
   }
   .new_create_account {
+    position: absolute;
+    left: 25%;
+    top: 10px;
+    height: 50% !important;
+    width: 50% !important;
+    background-color: #f7f7f7;
+  }
+  .corporet_booking {
     position: absolute;
     left: 25%;
     top: 10px;
