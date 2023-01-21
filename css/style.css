@@ -405,6 +405,7 @@ h6,
 }
 .inputdiv {
   margin-left: 15%;
+  margin-right: 15%;
   
 }
 .inputfild {
@@ -414,6 +415,7 @@ h6,
   border-color: #ced4da;
   color: #ced4da;
 }
+
 
 /* input icon */
 .input-icons i {
@@ -588,7 +590,7 @@ top: 119px;
   position: absolute;
   left: 30%;
   top: 20px;
-  height: 500px !important;
+  height: 520px !important; 
   width: 550px !important;
   background-color: #f7f7f7;
 }
@@ -647,6 +649,7 @@ height: 37px
   background-color: #f6851f;
   color: #000;
 }
+
 /* all media querys */
 @media (max-width: 1824px) {
   
@@ -696,6 +699,14 @@ height: 37px
   .menu_icon {
     margin-right: 73%;
   }
+  /* .cinput {
+	width: 323px !important;
+	height: 33px !important;
+	background-color: #f3f3f3;
+	border-color: #ced4da;
+	color: #ced4da;
+} */
+
 }
 
 @media (max-width: 1024px) {
@@ -742,6 +753,13 @@ height: 37px
   .menu_icon {
     margin-right: 72% !important;
   }
+    /* .cinput {
+  width: 280px !important;
+height: 33px !important;
+  background-color: #f3f3f3;
+  border-color: #ced4da;
+  color: #ced4da;
+} */
 }
 
 @media (min-width: 850px) and (max-width: 950px) {
@@ -910,6 +928,30 @@ height: 37px
     text-overflow: ellipsis;
     max-width: 365px;
   }
+  /* new added file 21-01-23 */
+  /* .cinput {
+  width: 253px !important;
+height: 33px !important;
+  background-color: #f3f3f3;
+  border-color: #ced4da;
+  color: #ced4da;
+} */
+ .corporet_booking {
+	position: absolute;
+	left: 4% !important;
+	top: 25px !important;
+	height: 55% !important;
+	width: 92% !important;
+	background-color: #f7f7f7;
+}
+  .textareafild {
+	width: 255px !important;
+	height: 45px !important;
+	background-color: #F3F3F3;
+	border-color: #ced4da;
+	color: #ced4da;
+}
+
 }
 
 @media (max-width: 375px) {
@@ -1014,6 +1056,30 @@ height: 37px
     margin-right: 27% !important;
     margin-bottom: 20px !important;
   }
+  /* new add css file 21-01-23 */
+  .cinput {
+  width: 185px !important;
+height: 33px !important;
+  background-color: #f3f3f3;
+  border-color: #ced4da;
+  color: #ced4da;
+}
+ .corporet_booking {
+    position: absolute;
+    left: 10% !important;
+    top: 25px !important;
+    height: 53% !important;
+    width: 80% !important;
+    background-color: #f7f7f7;
+  }
+.textareafild {
+	width: 170px !important;
+	height: 38px !important;
+	background-color: #F3F3F3;
+	border-color: #ced4da;
+	color: #ced4da;
+}
+  
 }
 
 @media (max-width: 320px) {
@@ -1040,8 +1106,8 @@ height: 37px
     background-color: #f7f7f7;
   }
   .cabtn {
-    margin-left: 22% !important;
-    width: 60% !important;
+    margin-left: 19% !important;
+    width: 74% !important;
     color: #ffffff;
     background-color: #ea7d1a;
     border-color: #f7f7f7;
@@ -1089,14 +1155,7 @@ height: 37px
     width: 240px !important;
     background-color: #f6851f;
   }
-  .booking_class {
-    position: absolute !important;
-    left: 17% !important;
-    bottom: 33% !important;
-    height: 434px !important;
-    width: 276px !important;
-    background-color: #f6851f;
-  }
+  
   .packages {
     position: absolute !important;
     left: 20% !important;
@@ -1108,5 +1167,21 @@ height: 37px
   .menu_icon {
     margin-right: 5% !important;
   }
+  .booking_class {
+    position: absolute !important;
+    left: 4% !important;  /* changed 21-01-23*/
+    bottom: 33% !important;
+    height: 434px !important;
+    width: 276px !important;
+    background-color: #f6851f;
+  }
+  /* new add css file 21-01-23 */
+  .cinput {
+  width: 170px !important;
+height: 30px !important;
+  background-color: #f3f3f3;
+  border-color: #ced4da;
+  color: #ced4da;
+}
 }
 /* all media querys end */
